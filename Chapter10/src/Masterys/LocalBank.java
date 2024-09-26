@@ -76,77 +76,27 @@ public class LocalBank {
 		
 		acctNum = new JTextField();
 		acctNum.setBounds(10, 70, 404, 23);
-		acctNum.addMouseListener(new MouseAdapter() 
-		{
-			
-			
-			@Override
-			public void mouseClicked(MouseEvent e) 
-			{
-				acctNum.setText(null);
-			}
-		});
 		panel.setLayout(null);
 		panel.add(acctNum);
 		acctNum.setColumns(10);
 		
 		amt = new JTextField();
 		amt.setBounds(10, 119, 404, 23);
-		amt.addMouseListener(new MouseAdapter() 
-		{
-			
-			
-			@Override
-			public void mouseClicked(MouseEvent e) 
-			{
-				amt.setText(null);
-			}
-		});
 		amt.setColumns(10);
 		panel.add(amt);
 		
 		fName = new JTextField();
 		fName.setBounds(10, 167, 404, 23);
-		fName.addMouseListener(new MouseAdapter() 
-		{
-			
-			
-			@Override
-			public void mouseClicked(MouseEvent e) 
-			{
-				fName.setText(null);
-			}
-		});
 		fName.setColumns(10);
 		panel.add(fName);
 		
 		lName = new JTextField();
 		lName.setBounds(10, 215, 404, 23);
-		lName.addMouseListener(new MouseAdapter() 
-		{
-			
-			
-			@Override
-			public void mouseClicked(MouseEvent e) 
-			{
-				lName.setText(null);
-			}
-		});
 		lName.setColumns(10);
 		panel.add(lName);
 		
 		bgBalance = new JTextField();
 		bgBalance.setBounds(10, 269, 404, 23);
-		bgBalance.addMouseListener(new MouseAdapter() 
-		{
-			
-			
-			@Override
-			public void mouseClicked(MouseEvent e) 
-			{
-				bgBalance.setText(null);
-			}
-		});
 		bgBalance.setColumns(10);
 		panel.add(bgBalance);
 		
