@@ -7,7 +7,6 @@ public class Roster {
 	public static void main(String[] args) {
 		//Declaration area
 		File dataFile;
-		FileReader in;
 		BufferedReader readFile;
 		String fileName, fName, lName;
 		int studentNum;
