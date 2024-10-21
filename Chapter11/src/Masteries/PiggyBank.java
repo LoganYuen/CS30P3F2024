@@ -30,10 +30,10 @@ public class PiggyBank implements Serializable {
     }
 
 
-    public void addNickle()
+    public void addNickel()
     {
         totalMoney += 0.05;
-        System.out.println("A nickle was added.\n");
+        System.out.println("A Nickel was added.\n");
     }
 
 
@@ -72,16 +72,16 @@ public class PiggyBank implements Serializable {
     }
 
 
-    public void removeNickle()
+    public void removeNickel()
     {
         if(totalMoney >= 0.05)
         {
             totalMoney -= 0.05;
-            System.out.println("A nickle was removed.\n");
+            System.out.println("A Nickel was removed.\n");
         }
         else
         {
-            System.out.println("There is not enough money to remove a nickle.\n");
+            System.out.println("There is not enough money to remove a Nickel.\n");
         }
     }
 

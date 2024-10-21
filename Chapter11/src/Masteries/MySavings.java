@@ -56,13 +56,13 @@ public class MySavings {
         {
             try
             {
-            dataFile = new File("C:\\Users\\logan\\Downloads\\savedBank.txt");
+            dataFile = new File("C:\\Users\\1100062079\\git\\CS30P3F2024\\Chapter11\\src\\Masteries\\bankSave.txt");
             fileIn = new FileInputStream(dataFile);
             objectIn = new ObjectInputStream(fileIn);
 
 
 
-
+            //Set value of object to saved data
             userBank = (PiggyBank) objectIn.readObject();
 
 
@@ -132,7 +132,7 @@ public class MySavings {
                     (
                     "What would you like to add?\n" +
                     "1. Penny.\n" +
-                    "2. Nickle.\n" +
+                    "2. Nickel.\n" +
                     "3. Dime.\n" +
                     "4. Quarter."
                     );
@@ -145,7 +145,7 @@ public class MySavings {
                             userBank.addPenny();
                         break;
                         case 2:
-                            userBank.addNickle();
+                            userBank.addNickel();
                         break;
                         case 3:
                             userBank.addDime();
@@ -168,7 +168,7 @@ public class MySavings {
                     (
                     "\nWhat would you like to take out?\n" +
                     "1. Penny.\n" +
-                    "2. Nickle.\n" +
+                    "2. Nickel.\n" +
                     "3. Dime.\n" +
                     "4. Quarter."
                     );
@@ -181,7 +181,7 @@ public class MySavings {
                             userBank.removePenny();
                         break;
                         case 2:
-                            userBank.removeNickle();
+                            userBank.removeNickel();
                         break;
                         case 3:
                             userBank.removeDime();
@@ -225,7 +225,7 @@ public class MySavings {
         {
             try
             {
-                dataFile = new File("C:\\Users\\logan\\Downloads\\savedBank.txt");
+                dataFile = new File("C:\\Users\\1100062079\\git\\CS30P3F2024\\Chapter11\\src\\Masteries\\bankSave.txt");
                 fileOut = new FileOutputStream(dataFile);
                 objectOut = new ObjectOutputStream(fileOut);
 
@@ -263,11 +263,137 @@ public class MySavings {
 }
 /* Screen Dump
 Test Case 1:
+Would you like to load the last saved piggy bank? [Y]es or [N]o: 
+n
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+1
+The total balance of this piggy bank is: $0.00
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+2
+What would you like to add?
+1. Penny.
+2. Nickel.
+3. Dime.
+4. Quarter.
+4
+A quarter was added.
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+2
+What would you like to add?
+1. Penny.
+2. Nickel.
+3. Dime.
+4. Quarter.
+1
+A penny was added.
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+3
+
+What would you like to take out?
+1. Penny.
+2. Nickel.
+3. Dime.
+4. Quarter.
+3
+A dime was removed.
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+1
+The total balance of this piggy bank is: $0.16
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+4
+Thank you for using this program. Would you like to save this bank? [Y]es or [N]o: 
+y
+
+Bank saved.
+
+
+
 
 
 
 
 Test Case 2:
+Would you like to load the last saved piggy bank? [Y]es or [N]o: 
+Y
+The total balance of this piggy bank is: $0.16
 
+Saved bank has loaded.
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+2
+What would you like to add?
+1. Penny.
+2. Nickel.
+3. Dime.
+4. Quarter.
+4
+A quarter was added.
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+3
+
+What would you like to take out?
+1. Penny.
+2. Nickel.
+3. Dime.
+4. Quarter.
+3
+A dime was removed.
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+1
+The total balance of this piggy bank is: $0.31
+
+Please enter a number that corresponds to one of the possible choices.
+1. Show total money in the bank.
+2. Add money to the bank.
+3. Take out money from the bank.
+4. End the program.
+4
+Thank you for using this program. Would you like to save this bank? [Y]es or [N]o: 
+n
+
+Bank not saved.
 
 */
