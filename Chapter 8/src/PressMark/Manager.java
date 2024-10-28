@@ -29,7 +29,7 @@ public class Manager extends Employee
 		return (payEarned);
 	}
 	
-	public String toStreing()
+	public String toString()
 	{
 		return(super.toString() + ", Manager salary: " + yearlySalary);
 	}
