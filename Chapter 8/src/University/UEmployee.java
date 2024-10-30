@@ -1,4 +1,4 @@
-package UEmployeeFacultyStaff;
+package University;
 
 public abstract class UEmployee 
 {
@@ -9,10 +9,11 @@ public abstract class UEmployee
 	
 	
 	//Constructor
-	public UEmployee(String fN, String lN)
+	public UEmployee(String fN, String lN, double s)
 	{
 		fName = fN;
 		lName = lN;
+		salary = s;
 	}
 	
 	
@@ -32,6 +33,24 @@ public abstract class UEmployee
 	public double getSalary()
 	{
 		return(salary);
+	}
+	
+	
+	
+	//Modifier methods
+	public void setFName(String f)
+	{
+		fName = f;
+	}
+	
+	public void setLName(String l)
+	{
+		lName = l;
+	}
+		
+	public void setSalary(double s)
+	{
+		salary = s;
 	}
 	
 	
