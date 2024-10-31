@@ -13,4 +13,9 @@ public class Faculty extends UEmployee {
 	{
 		return department;
 	}
+	
+	public void setDepartment(String d)
+	{
+		department = d;
+	}
 }

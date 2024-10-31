@@ -86,7 +86,6 @@ public class Puck extends Disk implements Comparable
 	
 	
 	
-	
 	public String toString()
 	{
 		if (standard == true)
@@ -96,6 +95,27 @@ public class Puck extends Disk implements Comparable
 		else
 		{
 			return"This puck is youth with a weight of " + weight;
+		}
+	}
+
+
+	public int compareTo(Object p)
+	{
+		Puck testPuck = (Puck) p;
+		
+		
+		
+		if (weight == testPuck.getWeight())
+		{
+			return 0;
+		}
+		else if (weight < testPuck.getWeight())
+		{
+			return -1;
+		}
+		else
+		{
+			return 1;
 		}
 	}
 }
