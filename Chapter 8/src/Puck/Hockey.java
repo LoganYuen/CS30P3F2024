@@ -27,9 +27,10 @@ public class Hockey {
 		userWeight = input.nextDouble();
 		
 		Puck userPuck = new Puck(userWeight);
+		System.out.print(userPuck);
 		
 		
-		
+		System.out.println("Please enter the weight of your puck (Standard 5oz to 5.5oz)(Youth 4oz to 4.5oz):");
 		
 	
 		

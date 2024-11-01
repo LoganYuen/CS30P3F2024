@@ -90,11 +90,11 @@ public class Puck extends Disk implements Comparable
 	{
 		if (standard == true)
 		{
-			return"This puck is standard with a weight of " + weight;
+			return"This puck is standard, with a weight of " + weight + "oz";
 		}
 		else
 		{
-			return"This puck is youth with a weight of " + weight;
+			return"This puck is youth, with a weight of " + weight + "oz";
 		}
 	}
 
