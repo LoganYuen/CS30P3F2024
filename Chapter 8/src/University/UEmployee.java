@@ -58,6 +58,6 @@ public abstract class UEmployee
 	
 	public String toString()
 	{
-		return("Employee" + fName + " " + lName + "'s salary is: " + salary);
+		return "Employee" + fName + " " + lName + "'s salary is: " + salary;
 	}
 }

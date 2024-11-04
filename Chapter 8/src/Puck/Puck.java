@@ -1,7 +1,4 @@
 package Puck;
-
-
-
 public class Puck extends Disk implements Comparable
 {
 	public double MIN_STD_W = 5;
@@ -11,9 +8,8 @@ public class Puck extends Disk implements Comparable
 	
 	private double weight;
 	private boolean standard, youth;
-
 	
-	//Constructor 
+	//Constructor
 	public Puck(double w)
 	{
 		super(1.5, 1);
@@ -36,7 +32,7 @@ public class Puck extends Disk implements Comparable
 	
 	
 	//Accessor method
-	public double getWeight() 
+	public double getWeight()
 	{
 	 	return(weight);
 	}
@@ -49,18 +45,18 @@ public class Puck extends Disk implements Comparable
 	
 	
 	
-	
+	//calculate and return division
 	public String getDivision()
 	{
 		String div;
 		
 		if(standard)
 		{
-			div = "The puck is standard";
+			div = "standard";
 		}
 		else
 		{
-			div = "The puck is youth";
+			div = "youth";
 		}
 		return div;
 	}
@@ -68,7 +64,7 @@ public class Puck extends Disk implements Comparable
 	
 	
 	
-	
+	//compare two objects and return boolean
 	public boolean equals(Object obj)
 	{
 		Puck testObj = (Puck)obj;
@@ -85,20 +81,20 @@ public class Puck extends Disk implements Comparable
 	
 	
 	
-	
+	//return object as string
 	public String toString()
 	{
 		if (standard == true)
 		{
-			return"This puck is standard, with a weight of " + weight + "oz";
+			return"This puck is standard with a weight of " + weight + "oz.";
 		}
 		else
 		{
-			return"This puck is youth, with a weight of " + weight + "oz";
+			return"This puck is youth with a weight of " + weight + "oz.";
 		}
 	}
-
-
+	
+	//compare two objects and return int
 	public int compareTo(Object p)
 	{
 		Puck testPuck = (Puck) p;

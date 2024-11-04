@@ -18,4 +18,10 @@ public class Faculty extends UEmployee {
 	{
 		department = d;
 	}
+	
+	
+	public String toString()
+	{
+		return "The department that this faculty member is in is: " + department;
+	}
 }
