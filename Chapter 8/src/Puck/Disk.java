@@ -1,8 +1,7 @@
 package Puck;
-
 /**
- * Disk class.
- */
+* Disk class.
+*/
 public class Disk extends Circle {
 	private double thickness;
 		
@@ -16,9 +15,7 @@ public class Disk extends Circle {
 		super(r);
 		thickness = t;
 	}
-
-
-	/** 
+	/**
 	 * Changes the thickness of the disc.
 	 * pre: none
 	 * post: Thickness has been changed.
@@ -26,9 +23,7 @@ public class Disk extends Circle {
 	public void setThickness(double newThickness) {
 	 	thickness = newThickness;
 	}
-
-
-	/** 
+	/**
 	 * Returns the thickness of the disc.
 	 * pre: none
 	 * post: The thickness of the disc has been returned.
@@ -49,37 +44,33 @@ public class Disk extends Circle {
 		v = super.area() * thickness;
 		return(v);
 	}
-
 	
-	/** 
+	/**
 	 * Determines if the object is equal to another
 	 * Disk object.
 	 * pre: none
-	 * post: true has been returned if the objects have 
-	 * the same radii and thickness. false has 
+	 * post: true has been returned if the objects have
+	 * the same radii and thickness. false has
 	 * been returned otherwise.
 	 */
 	public boolean equals(Object obj) {
 		Disk testObj = (Disk)obj;
 		
-	 	if (testObj.getRadius() == super.getRadius() && 
+	 	if (testObj.getRadius() == super.getRadius() &&
 	 		testObj.getThickness() == thickness) {
 			return(true);
 		} else {
 			return(false);
 		}
 	}
-
-
-	/** 
+	/**
 	 * Returns a String that represents the Disk object.
 	 * pre: none
-	 * post: A string representing the Disk object has 
+	 * post: A string representing the Disk object has
 	 * been returned.
 	 */
 	public String toString() {
 		String diskString;
-
 		diskString = "The disk has radius " + super.getRadius() +
 					 " and thickness " + thickness + ".";
 	 	return(diskString);
