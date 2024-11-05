@@ -11,14 +11,21 @@ public class University {
 		Staff staffMem = new Staff("Bob", "Kid", 60000, "Sec");
 		Faculty facultyMem = new Faculty("Jack", "brown", 100000, "Professer");
 		Employee emp;
-		String action;
+		String choice;
 		int empNum;
 		double payArg;
 		
 		Scanner input = new Scanner(System.in);
 		
 		
-		System.out.println("");
+		System.out.println("Please enter your employee number: ");
+		empNum = input.nextInt();
+		
+		switch(empNum)
+		{
+		case 1: emp = staffMem;
+		case 2:
+		}
 		
 	}
 }

@@ -55,7 +55,7 @@ public abstract class UEmployee
 	
 	
 	
-	
+	//Return object as string
 	public String toString()
 	{
 		return "Employee" + fName + " " + lName + "'s salary is: " + salary;
