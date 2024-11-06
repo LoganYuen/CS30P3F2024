@@ -1,5 +1,13 @@
 package Vehicle;
 
+/*
+Program: University.java          Date: November 5, 2024
+Purpose: Create a Minivan class that includes additional members specific to a minivan
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
+
 public class Minivan extends Vehicle
 {
 	boolean hasSlidingDoors;

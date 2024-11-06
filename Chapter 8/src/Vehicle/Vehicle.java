@@ -1,5 +1,13 @@
 package Vehicle;
 
+/*
+Program: University.java          Date: November 4, 2024
+Purpose: Create an abstract Vehicle class that defines general details and actions associated with a vehicle.
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
+
 public abstract class Vehicle 
 {
     double fuelEconomyCity;

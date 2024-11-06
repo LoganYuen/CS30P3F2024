@@ -1,5 +1,13 @@
 package Vehicle;
 
+/*
+Program: University.java          Date: November 4, 2024
+Purpose: Create a Truck class that includes additional members specific to a truck
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
+
 public class Truck extends Vehicle
 {
 	double bedSize;
