@@ -1,5 +1,13 @@
 package University;
 
+/*
+Program: Faculty.java          Date: November 1, 2024
+Purpose: Create a Faculty class with members to store and return the department name.
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
+
 public class Faculty extends UEmployee 
 {
 	private String department;
@@ -31,6 +39,6 @@ public class Faculty extends UEmployee
 	//Return object as string
 	public String toString()
 	{
-		return "The department that this faculty member is in is: " + department;
+		return super.toString() + " and the department they're in is: " + department;
 	}
 }

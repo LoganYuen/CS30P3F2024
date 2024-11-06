@@ -1,10 +1,20 @@
 package University;
 
+import java.text.NumberFormat;
+
+/*
+Program: University.java          Date: October 31, 2024
+Purpose: Create a UEmployee class to contain variables for an employee's name and salary as well as methods to return them.
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
+
 public abstract class UEmployee 
 {
 	private String fName, lName;
 	private double salary;
-	
+	NumberFormat money = NumberFormat.getCurrencyInstance();
 	
 	
 	
@@ -30,9 +40,9 @@ public abstract class UEmployee
 		return(lName);
 	}
 		
-	public double getSalary()
+	public String getSalary()
 	{
-		return(salary);
+		return(money.format(salary));
 	}
 	
 	
@@ -58,6 +68,6 @@ public abstract class UEmployee
 	//Return object as string
 	public String toString()
 	{
-		return "Employee" + fName + " " + lName + "'s salary is: " + salary;
+		return "Employee " + fName + " " + lName + "'s salary is: " + money.format(salary);
 	}
 }

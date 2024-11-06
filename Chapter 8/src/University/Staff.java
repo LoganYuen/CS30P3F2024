@@ -1,5 +1,13 @@
 package University;
 
+/*
+Program: University.java          Date: November 1, 2024
+Purpose: Create a Staff class to contain members for storing and returning the job title.
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
+
 public class Staff extends UEmployee
 {
 	private String jobTitle;
@@ -15,13 +23,13 @@ public class Staff extends UEmployee
 	
 	
 	//Accessor method
-	public String getDepartment()
+	public String getJobTitle()
 	{
 		return jobTitle;
 	}
 	
 	//Modifier method
-	public void setDepartment(String d)
+	public void setJobTitle(String d)
 	{
 		jobTitle = d;
 	}
@@ -31,6 +39,6 @@ public class Staff extends UEmployee
 	//Return object as string
 	public String toString()
 	{
-		return "The job that this staff member has is: " + jobTitle;
+		return super.toString() + " and the job they have is: " + jobTitle;
 	}
 }
