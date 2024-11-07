@@ -20,8 +20,7 @@ public class University
 		//Declaration/Initialization area
 		Staff staffMem = new Staff("Bob", "Kid", 60000, "secretary");
 		Faculty facultyMem = new Faculty("Jack", "brown", 100000, "Professer");
-		int choice;
-		int empNum;
+		int choice, empNum;
 		UEmployee emp;
 		
 		
@@ -62,6 +61,7 @@ public class University
 					+ "7. Quit.");
 			
 			choice = input.nextInt();
+			input.nextLine();
 			
 			
 			
@@ -99,9 +99,9 @@ public class University
 				case 3: 
 					System.out.println("Would you like to change the first name(1) or last name(2)?");
 					int nameType = input.nextInt();
+					input.nextLine();
 					
 					System.out.println("What is the new name?");
-					input.nextLine();
 					String name = input.nextLine();
 					
 					
@@ -132,6 +132,7 @@ public class University
 				case 4: 
 					System.out.println("What is the new salary?");
 					double salary = input.nextDouble();
+					input.nextLine();
 					
 					
 					if (empNum == 1)
@@ -153,7 +154,6 @@ public class University
 				//Edit job/department
 				case 5: 
 					System.out.println("What is the new job/department?");
-					input.nextLine();
 					String JobOrDepartment = input.nextLine();
 					
 					

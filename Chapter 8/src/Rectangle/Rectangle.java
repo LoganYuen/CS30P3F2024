@@ -4,7 +4,7 @@ package Rectangle;
 public class Rectangle implements Comparable, ComparableArea
 {
 	//Declaration area
-	double length, width;
+	private double length, width;
 	
 	
 	

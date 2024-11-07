@@ -10,13 +10,9 @@ Course: Computer Science 30
 
 public abstract class Vehicle 
 {
-    double fuelEconomyCity;
-    double fuelEconomyHwy;
-    int seatingCapacity;
-    double cargoVolume;
-    boolean hasHeatedSeats;
-    boolean hasChargingPorts;
-    double maxSpeed;
+    private double fuelEconomyCity, fuelEconomyHwy, cargoVolume, maxSpeed;
+    private int seatingCapacity;
+    private boolean hasHeatedSeats, hasChargingPorts;
     
     
     //Constructor
