@@ -6,7 +6,7 @@ Author: Logan Yuen
 School: CHHS
 Course: Computer Science 30
 */
-public class testRectangle
+public class TestRectangle
 {
 	public static void main(String[] args)
 	{

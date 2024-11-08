@@ -10,7 +10,7 @@ School: CHHS
 Course: Computer Science 30
 */
 
-public class testVehicle {
+public class TestVehicle {
 
 	public static void main(String[] args) 
 	{

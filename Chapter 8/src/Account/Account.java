@@ -1,8 +1,12 @@
 package Account;
 
-/**
- * Account class.
- */
+/*
+Program: Account.java          Date: November 7, 2024
+Purpose: Use the Account class form chapter 7 to let BussinessAcct and PersonalAcct inherit from it.
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
  
 import java.text.NumberFormat;
 
@@ -19,10 +23,10 @@ public class Account {
 	 * post: An account has been created. Balance and 
 	 * customer data has been initialized with parameters.
 	 */
-	public Account(double bal, String fName, String lName)//include street, city, province or state, postal code or zip code
+	public Account(double bal, String fName, String lName, String str, String cit, String pro, String pos)
 	 {
 		balance = bal;
-		cust = new Customer(fName, lName);//this constructor should reflect the new additions above, street, city, province, postal code
+		cust = new Customer(fName, lName, str, cit, pro, pos);
 		acctID = fName.substring(0,1) + lName;
 	}
 	
@@ -34,7 +38,7 @@ public class Account {
 	 */
 	public Account(String ID) {
 		balance = 0;
-		cust = new Customer("", "");
+		cust = new Customer("", "", "", "", "", "");
 		acctID = ID;
 	}
 
@@ -84,11 +88,14 @@ public class Account {
 
 
 
-	//Create a changeAddress() method that calls the cust object from above in order to change
-	//Street, city, province, postalCode
-
-
-
+	//calls cust object to change street, city, province, and postal code
+	public void changeAddress()
+	{
+		cust.changeStreet();
+		cust.changeCity();
+		cust.changeProvince();
+		cust.changePostalCode();
+	}
 
 	
 	

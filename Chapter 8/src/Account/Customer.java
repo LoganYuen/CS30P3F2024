@@ -1,12 +1,18 @@
 package Account;
-/**
- * Customer class.
- */
+
+import java.util.Scanner;
+
+/*
+Program: Customer.java          Date: November 7, 2024
+Purpose: Create a Customer class that stores information about a customer and allows a user to change that information.
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
 
 public class Customer {
-	private String firstName, lastName;
+	private String firstName, lastName, street, city, province, postalCode;
 
-	//create String variables street, city, province, postal code	
 
 	
 	/**
@@ -15,22 +21,51 @@ public class Customer {
 	 * post: A Customer object has been created. 
 	 * Customer data has been initialized with parameters.
 	 */
-	public Customer(String fName, String lName) //modify constructor to include street, city, province, postal code
+	public Customer(String fName, String lName, String str, String cit, String pro, String pos)
 	{
 		firstName = fName;
 		lastName = lName;
-
-		//reflect the changes in the parameter
+		street = str;
+		city = cit;
+		province = pro;
+		postalCode = pos;
 	}
 	
 
-	//create changeCity method that asks the user their city and records city in a variable above
+	
+	
+	//Asks user for their city and records it
+	public void changeCity() 
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is your new city?: ");
+		city = input.nextLine();
+	}
 
-	//create changeStreet method that asks the user their street and records street in a variable above
 
-	//create changeProvince method that asks the user their province and records province in a variable above
+	//Asks user for their street and records it
+	public void changeStreet() 
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is your new street?: ");
+		street = input.nextLine();
+	}
 
-	//create changePostalCode method that asks the user their postal code and records postal code in a variable above
+	//Asks user for their province and records it
+	public void changeProvince() 
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is your new province?: ");
+		province = input.nextLine();
+	}
+
+	//Asks user for their postal code and records it
+	public void changePostalCode() 
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is your new postal code?: ");
+		postalCode = input.nextLine();
+	}
 
 
 
@@ -42,9 +77,7 @@ public class Customer {
 	 */
 	public String toString() {
 		String custString;
-
-		//update this string so that it contains the street, city, province, and postal code
-		custString = firstName + " " + lastName + "\n";
+		custString = firstName + " " + lastName + ": " + street + ", " + city + ", " + province + ", " + postalCode + "\n";
 	 	return(custString);
 	}
 
