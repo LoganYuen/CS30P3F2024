@@ -10,8 +10,7 @@ Course: Computer Science 30
 
 public class Truck extends Vehicle
 {
-	double bedSize;
-	double towingCapacity;
+	private double bedSize, towingCapacity;
 	
 	
 	//Constructor
