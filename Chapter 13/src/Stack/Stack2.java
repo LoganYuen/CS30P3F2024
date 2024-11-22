@@ -1,4 +1,4 @@
-package Stack2;
+package Stack;
 
 public class Stack2 {
 
