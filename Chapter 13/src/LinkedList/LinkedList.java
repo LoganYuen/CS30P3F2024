@@ -89,10 +89,11 @@ public class LinkedList
 		
 		if (current != null)
 		{
+			listItems += 1;
 			while (current.getNext() != null) 
 			{
-				current = current.getNext();
 				listItems += 1;
+				current = current.getNext();
 			}
 		}
 		
