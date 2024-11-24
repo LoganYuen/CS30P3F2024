@@ -1,9 +1,23 @@
 package Stack;
+/*
+Program: Stack2.java          Date: November 18, 2024
 
-public class Stack2 {
 
+Purpose: Create a Stack2 class that implements a stack data structure for Objects.
+
+
+Author: Logan Yuen
+School: CHHS
+Course: Computer Science 30
+*/
+
+
+public class Stack2 
+{
+	//create data array and top variable
 	private Object[] data;
 	private int top;
+	
 	
 	//Constructor
 	public Stack2(int maxItems)
@@ -13,12 +27,15 @@ public class Stack2 {
 	}
 	
 	
+	
+	//return data from the top
 	public Object top()
 	{
 		return (data[top]);
 	}
 	
 	
+	//remove and return the data from the top
 	public Object pop()
 	{
 		top -= 1;
@@ -26,6 +43,7 @@ public class Stack2 {
 	}
 	
 	
+	//add new data to the top 
 	public void push(Object item)
 	{
 		if (top < data.length - 1)
@@ -36,6 +54,7 @@ public class Stack2 {
 	}
 	
 	
+	//Check if the stack is empty
 	public boolean isEmpty()
 	{
 		if (top == -1)
@@ -49,12 +68,14 @@ public class Stack2 {
 	}
 	
 	
+	//Make the stack empty
 	public void makeEmpty()
 	{
 		top = -1;
 	}
 	
 	
+	//Check the size of the stack
 	public int size()
 	{
 		if(isEmpty())
