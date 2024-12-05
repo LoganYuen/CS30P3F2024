@@ -1,8 +1,9 @@
-package Turn;
+package Move;
+
 //Add Phidgets Library
 import com.phidget22.*;
 
-public class Turn1 {
+public class Move {
     public static void main(String[] args) throws Exception {
 
         //Connect to wireless rover
@@ -20,12 +21,12 @@ public class Turn1 {
         leftMotors.open(5000);
         rightMotors.open(5000);
 
-        //Turn in opposite direction
-        leftMotors.setTargetVelocity(-1);
+        //Move forward at full speed
+        leftMotors.setTargetVelocity(1);
         rightMotors.setTargetVelocity(1);
 
-        //Wait for 2 second
-        Thread.sleep(2000);
+        //Wait for 1 second
+        Thread.sleep(1000);
 
         //Stop motors
         leftMotors.setTargetVelocity(0);
